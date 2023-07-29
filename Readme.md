@@ -31,4 +31,52 @@ int main() {
 }
 '''
 </pre>
+##what is  a struct
+In C programming, a struct is like a container that can hold different kinds of things. It's like a backpack where you can put your books, toys, and snacks all together. Each item has a name and its own type, and you can carry them around easily!
+<pre>
+'''
+// Declare a struct called "Person"
+struct Person {
+    char name[50]; // Name of the person (up to 50 characters)
+    int age;       // Age of the person (an integer)
+    float height;  // Height of the person (a floating-point number)
+};
+'''
+</pre>
+ Now that we have our "Person" struct, we can create some variables of this type to hold information about different people.
+ <pre>
+ '''
+ #include <stdio.h>
+
+int main() {
+    // Create variables of the "Person" struct
+    struct Person person1;
+    struct Person person2;
+
+    // Fill in the information for the first person
+    strcpy(person1.name, "Alice");
+    person1.age = 25;
+    person1.height = 1.75;
+
+    // Fill in the information for the second person
+    strcpy(person2.name, "Bob");
+    person2.age = 30;
+    person2.height = 1.80;
+
+    // Display the information for both persons
+    printf("Person 1\n");
+    printf("Name: %s\n", person1.name);
+    printf("Age: %d\n", person1.age);
+    printf("Height: %.2f\n", person1.height);
+
+    printf("Person 2\n");
+    printf("Name: %s\n", person2.name);
+    printf("Age: %d\n", person2.age);
+    printf("Height: %.2f\n", person2.height);
+
+    return 0;
+}
+'''
+</pre>
+
 
