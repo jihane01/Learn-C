@@ -1,5 +1,7 @@
 #this Repo gather all exercices from basic to advanced 
 # Definitions
+## Pointer
+In C programming, a pointer is a variable that stores the memory address of another variable. It allows us to access and manipulate data indirectly by referring to the memory location where the data resides.
 ## Segemetation Fault
 is when you try to dereference a pointer that is pointing to invalid memory 
 Dereferencing means accessing the value stored at the memory address pointed to by the pointer.
